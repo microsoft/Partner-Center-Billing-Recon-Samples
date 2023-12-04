@@ -1,14 +1,25 @@
 # Project
 
-> This repo has been populated by an initial template to help get you started. Please
-> make sure to update the content to build a great experience for community-building.
+> This repo contains a samples showing usage of the new MS Graph async model APIs to get billing and recon data. For API details, please refer to the MS Graph docs.
 
-As the maintainer of this project, please make a few updates:
+## To run samples
+### Prerequisites
+- You need to have Visual studio 2022 with .NET 6.0 installed.
+- Bearer token to access MS Graph API, with appropriate permission to get billing data.
 
-- Improving this README.MD file to provide a great experience
-- Updating SUPPORT.MD with content about this project's support experience
-- Understanding the security reporting process in SECURITY.MD
-- Remove this section from the README
+After downloading the file, open the solution *MSGraphSample\MSGraphBillingSample.sln* and update below values in *program.cs* based on your scenario.
+- accessToken: bearer token for authentication and authorization.
+- invoiceid: invoiceid for which to get billed data. Invoices from September 2023 onwards are only available. Example G012040490
+- downloadPath: local path where billing blobs should be downloaded. Example c:\downloads
+- extractUsageFilesPath: local path where billing blobs after uncompression will be generated. Example c:\downloads\
+
+Update below configuration values in *App.config*
+- graphRooturl: 
+    - for Beta endpoint use https://graph.microsoft.com/beta
+    - for Prod endpoint use https://graph.microsoft.com/v1.0
+- dbconnection: SQL db connection string where sample will insert downloaded data
+- billedusagetablename: SQL table name in which data will be inserted. table schema should match with attributes in the downloaded file(s).
+
 
 ## Contributing
 

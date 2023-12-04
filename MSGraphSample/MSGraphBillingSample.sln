@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.8.34316.72
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MSGraphBillingSample", "MSGraphBillingSample.csproj", "{D55A1305-E029-4CF2-8E1C-03CE8F1801E3}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D55A1305-E029-4CF2-8E1C-03CE8F1801E3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D55A1305-E029-4CF2-8E1C-03CE8F1801E3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D55A1305-E029-4CF2-8E1C-03CE8F1801E3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D55A1305-E029-4CF2-8E1C-03CE8F1801E3}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {3CFD0715-586D-4C13-A3AE-4EDC69C5304C}
+	EndGlobalSection
+EndGlobal
